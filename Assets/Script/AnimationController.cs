@@ -8,6 +8,8 @@ public class AnimationController : MonoBehaviour
     public Animator m_PresentationAnimator;
     public Animator m_FourPeopleAnimator;
     public Animator m_TwoPeopleAnimator;
+    public Animator m_FourPeopleAnimator_V;
+    public Animator m_FourPeopleAnimator_H;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,8 +62,26 @@ public class AnimationController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             m_TwoPeopleAnimator.Play("ShareScreen");
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            m_FourPeopleAnimator_V.Play("SlideIn");
 
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            m_FourPeopleAnimator_V.Play("SlideOut");
+
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            m_FourPeopleAnimator_H.Play("SlideIn");
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            m_FourPeopleAnimator_H.Play("SlideOut");
+        }
+
 
 
 
